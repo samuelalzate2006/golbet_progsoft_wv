@@ -18,5 +18,7 @@ public interface IMatchService
 
     Task<IEnumerable<MatchDto>> GetBoardAsync(MatchStatus? status = null);
 
+    Task<MatchDetailDto?> GetDetailAsync(int id);
+
 }
 
